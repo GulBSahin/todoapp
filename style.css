@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:#EEE8EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;  
+    margin:auto;
+}
+h1{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 4em;
+    text-align: center;
+}
+/* todos*/
+.todolist{
+    width: 50vw;
+    padding: 0px 10px;
+    text-align: left;
+    border: 5px solid #E3A897;
+    color: rgb(39, 38, 38);
+    background-color: #FFFFFF;
+    margin:auto;
+    margin-top:2em;
+    box-shadow: 5px 10px #b1a6ac98;
+    
+    
+}
+
+ul li,p{
+    list-style-type: none; 
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 5px;
+    align-items: center;
+
+}
+
+li.checked::before {
+content: "\2714";
+font-size:1.5em;
+color:green;
+}
+li.unchecked::before {
+    content: "\2718";
+    font-size:1.5em;
+    }
+.list-group, #add-task{
+    display:flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+    }
+
+.list-group :hover{
+    color: #7e2b58;
+    background-color: #d8c9d1;
+    
+    
+}
+.btn,.add-btn {
+    background-color: #ACCACE; /* Blue background */
+    border: none; /* Remove borders */
+    border-radius:5px;
+    color: white; /* White text */
+    padding: 0.4em 0.5em; /* Some padding */
+    font-size: 0.8em; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  input{
+    font-size: 1em;
+    border: none;
+    width: 100%;
+    padding: 5px;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  hr{
+      flex-direction: column;
+  }
+
+#footer{
+    display: flex;
+    flex-direction: row;
+}
+p{
+    display: block;
+    display: inline-block; 
+    margin-top:1em;
+}
+
+h2{
+    text-align: center;
+}
